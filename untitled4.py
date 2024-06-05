@@ -36,7 +36,7 @@ st.write(
 st.subheader('ANALYSIS:chart:')
 st.title(':blue[ANALYSIS OF DATASETS]')
 from PIL import Image
-image = Image .open('/content/pl.jpg.jpeg')
+image = Image .open('pl.jpg.jpeg')
 st.image(
     image ,
     width = 600 ,
@@ -45,7 +45,7 @@ st.subheader('Figure 1:  Analysis of tourist arrivals by month')
 
 
 from PIL import Image
-image = Image .open('/content/photo 2.jpg.jpeg')
+image = Image .open('photo 2.jpg.jpeg')
 st.image(
     image ,
     width = 400 ,
@@ -54,7 +54,7 @@ st.subheader('Figure 2:  Analysis of tourist arrivals each year')
 
 
 from PIL import Image
-image = Image .open('/content/02.jpg.jpeg')
+image = Image .open('02.jpg.jpeg')
 st.image(
     image ,
     width = 600 ,
@@ -76,9 +76,9 @@ st.title("Tourism Arrival Prediction")
 # Load the datasets
 @st.cache_data
 def load_data():
-    poe_df = pd.read_csv('/content/pages/poe.csv')
-    continents_df = pd.read_csv('/content/pages/continents2.csv')
-    foreign_arrivals_df = pd.read_csv('/content/pages/foreign_arrivals.csv')
+    poe_df = pd.read_csv('poe.csv')
+    continents_df = pd.read_csv('continents2.csv')
+    foreign_arrivals_df = pd.read_csv('foreign_arrivals.csv')
     return poe_df, continents_df, foreign_arrivals_df
 
 poe_df, continents_df, foreign_arrivals_df = load_data()
