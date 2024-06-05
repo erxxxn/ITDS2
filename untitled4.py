@@ -39,8 +39,8 @@ def show_home():
     st.subheader('Figure 3: Analysis of visited places of tourist')
 
 import streamlit as st
-from home import show_home()
-from prediction import show_prediction()
+from home import show_home
+from prediction import show_prediction
 
 # Set page config
 st.set_page_config(page_title="Tourism Prediction App")
