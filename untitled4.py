@@ -9,58 +9,32 @@ Original file is located at
 import streamlit as st
 from PIL import Image
 
+def show_home():
+    st.title("HomePage")
+    st.header('Predicting Future Tourism Trends in Malaysia', divider='blue')
+    st.subheader('HOME PAGE:house:')
+    st.title(':blue[INTRODUCTION]')
+    
+    image = Image.open('download.jpeg.jpeg')
+    st.image(image, caption="TOURISM", width=800)
+    
+    st.write('''
+        :blue[WELCOME TO THE HOME PAGE!]
+        The future of tourism application is also a crucial tool in providing stakeholders with the means and insights to handle a myriad of tourism complexity as well as the dynamism in the Malaysian tourism industry. This makes more accurate forecasts and strategic planning for smarter decisions, more sustainable growth and ultimately a better tourism experience. To create models that can together predict the accurate number of tourists into the future and that is only the tip of a giant ice berg. Using these different predictions, the project intends to provide insights and actionable recommendations to help stakeholders to make informed decisions. In a knock-on effect, it will inform better strategic planning from stakeholders, so they can leverage marketing campaigns, infrastructure development, and product offerings tied to expected tourism trends.
+    ''')
 
-st.set_page_config(
-  page_title = "Homepage"
-)
+    st.subheader('ANALYSIS:chart:')
+    st.title(':blue[ANALYSIS OF DATASETS]')
+    
+    image = Image.open('pl.jpg.jpeg')
+    st.image(image, width=600)
+    st.subheader('Figure 1: Analysis of tourist arrivals by month')
+    
+    image = Image.open('photo 2.jpg.jpeg')
+    st.image(image, width=400)
+    st.subheader('Figure 2: Analysis of tourist arrivals each year')
+    
+    image = Image.open('02.jpg.jpeg')
+    st.image(image, width=600)
+    st.subheader('Figure 3: Analysis of visited places of tourist')
 
-st.title("HomePage")
-
-st.header('Predicting Future Tourism Trends in Malaysia' , divider='blue')
-st.subheader('HOME PAGE:house:')
-st.title(':blue[INTRODUCTION] ')
-from PIL import Image
-image = Image .open('download.jpeg.jpeg')
-st.image(
-    image ,
-    caption = "TOURISM" ,
-    width = 800 ,
-  )
-st.write(
-    '''
-    :blue[WELCOME TO THE HOME PAGE!]
-    The future of tourism application is also a crucial tool in providing stakeholders with the means and insights to handle a myriad of tourism complexity as well as the dynamism in the Malaysian tourism industry. This makes more accurate forecasts and strategic planning for smarter decisions, more sustainable growth and ultimately a better tourism experience. To create models that can together predict the accurate number of tourists into the future and that is only the tip of a giant ice berg. Using these different predictions, the project intends to provide insights and actionable recommendations to help stakeholders to make informed decisions. In a knock-on effect, it will inform better strategic planning from stakeholders, so they can leverage marketing campaigns, infrastructure development, and product offerings tied to expected tourism trends.
-    '''
-)
-
-st.subheader('ANALYSIS:chart:')
-st.title(':blue[ANALYSIS OF DATASETS]')
-from PIL import Image
-image = Image .open('pl.jpg.jpeg')
-st.image(
-    image ,
-    width = 600 ,
-  )
-st.subheader('Figure 1:  Analysis of tourist arrivals by month')
-
-
-from PIL import Image
-image = Image .open('photo 2.jpg.jpeg')
-st.image(
-    image ,
-    width = 400 ,
-  )
-st.subheader('Figure 2:  Analysis of tourist arrivals each year')
-
-
-from PIL import Image
-image = Image .open('02.jpg.jpeg')
-st.image(
-    image ,
-    width = 600 ,
-  )
-st.subheader('Figure 3:  Analysis of visited places of tourist')
-
-
-
-st.sidebar.success("Select a page above")
