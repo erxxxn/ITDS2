@@ -38,3 +38,22 @@ def show_home():
     st.image(image, width=600)
     st.subheader('Figure 3: Analysis of visited places of tourist')
 
+import streamlit as st
+from home import show_home()
+from prediction import show_prediction()
+
+# Set page config
+st.set_page_config(page_title="Tourism Prediction App")
+
+# Create a sidebar for navigation
+st.sidebar.title('Navigation')
+page = st.sidebar.radio('Go to', ['Home', 'Prediction'])
+
+# Show the selected page
+if page == 'Home':
+    show_home()
+elif page == 'Prediction':
+    show_prediction()
+
+st.sidebar.success("Select a page above")
+
