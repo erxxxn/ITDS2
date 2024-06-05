@@ -1,0 +1,9 @@
+import pandas as pd
+import streamlit as st
+
+@st.cache_data
+def load_data():
+    poe_df = pd.read_csv('poe.csv')
+    continents_df = pd.read_csv('continents2.csv')
+    foreign_arrivals_df = pd.read_csv('foreign_arrivals.csv')
+    return poe_df, continents_df, foreign_arrivals_df
