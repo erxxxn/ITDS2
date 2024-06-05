@@ -20,7 +20,7 @@ st.header('Predicting Future Tourism Trends in Malaysia' , divider='blue')
 st.subheader('HOME PAGE:house:')
 st.title(':blue[INTRODUCTION] ')
 from PIL import Image
-image = Image .open('/content/download.jpeg.jpeg')
+image = Image .open('download.jpeg.jpeg')
 st.image(
     image ,
     caption = "TOURISM" ,
