@@ -1,6 +1,9 @@
 import streamlit as st
-from home import show_home
-from prediction import show_prediction
+from home import untitled4.py
+from prediction import Prediction
+
+
+
 
 # Set page config
 st.set_page_config(page_title="Tourism Prediction App")
